@@ -1,0 +1,41 @@
+# Arquivos locais
+local/
+
+# Configuração do banco (use db.properties.example como modelo)
+src/main/resources/db.properties
+
+# Pasta de compilação (Maven)
+target/
+*.jar
+*.war
+*.ear
+
+# IDEs (IntelliJ, Eclipse, VSCode)
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.vscode/
+
+# Arquivos do Sistema Operacional
+Thumbs.db
+.DS_Store
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários e backups
+*.tmp
+*.bak
+*.swp
+*~
+
+# Segurança: Nunca suba arquivos com senhas reais
+# Se você tiver arquivos .env ou similares, adicione-os aqui
+.env

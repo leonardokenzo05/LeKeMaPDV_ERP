@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+
+        <!-- JDBC connection pool settings -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Annotated Classes -->
+        <mapping class="com.erp.model.Cliente"/>
+        <mapping class="com.erp.model.Fornecedor"/>
+        <mapping class="com.erp.model.Produto"/>
+        <mapping class="com.erp.model.Pedido"/>
+        <mapping class="com.erp.model.PedidoItem"/>
+        <mapping class="com.erp.model.FormaPagamento"/>
+        <mapping class="com.erp.model.PedidoPagamento"/>
+        <mapping class="com.erp.model.Usuario"/>
+        <mapping class="com.erp.model.PermissaoUsuario"/>
+
+    </session-factory>
+</hibernate-configuration>
